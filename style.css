@@ -1,0 +1,76 @@
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5%;
+}
+.content-title{
+  text-align: center;
+}
+.flex{
+  display: flex;
+}
+.btn {
+  text-align: center;
+  display: block;
+  width: 100%;
+  padding: 1rem;
+  font-size: 2rem;
+}
+
+.circle{
+  background: red;
+  border-bottom: 5px solid #de0000;
+  border-right: 1px solid #ad0101;
+  color:white;
+}
+
+.x-mark{
+  background: skyblue;
+  border-bottom: 5px solid #75b2cc;
+  border-right: 1px solid #6193a9;
+  color:white;
+}
+
+.table{
+  margin-top: 50px;
+}
+
+td {
+  border-right: 1px solid black;
+  border-bottom: 1px solid black;
+  width: 1rem;
+  height: 1rem;
+  padding: 2rem;
+  font-size: 2rem;
+}
+
+td:last-child {
+  border-right: 0;
+}
+tr:last-child td {
+  border-bottom: 0;
+}
+
+.btn.circle.active{
+  background: red;
+  border: 0;
+  box-shadow: inset 1px 1px 15px grey;
+}
+
+.btn.x-mark.active{
+  background: skyblue;
+  border: 0;
+  box-shadow: inset 1px 1px 15px grey;
+}
+
+td.pannel.active{
+  background: #f0f351;
+  color: white;
+}
+
+.message{
+  color: green;
+  align-text: center;
+}
