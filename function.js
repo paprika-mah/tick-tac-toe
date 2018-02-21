@@ -1,8 +1,9 @@
 const size = document.querySelectorAll('.table .row').length
+const HYPHEN = '-'
 
 document.querySelector('.table').addEventListener('click',function(e){
   if(document.querySelector('#finished').value === 'true'){return}
-  if(e.target.innerText !== '-'){return}
+  if(e.target.innerText !== HYPHEN){return}
 
   document.querySelectorAll('.pannel').forEach(function( btn ) {
     btn.classList.remove("active")
@@ -93,7 +94,7 @@ function isFinalized(list){
 
 function appendTexts(a, x, y){
   text = document.querySelector(`#pannel-${x}-${y}`).innerText
-  if( text === '-' ){ return []}
+  if( text === HYPHEN ){ return []}
   a.push(text)
   return a
 }
