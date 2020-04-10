@@ -3,7 +3,10 @@ const HYPHEN = '-'
 
 document.querySelector('.table').addEventListener('click',function(e){
   if(document.querySelector('#finished').value === 'true'){return}
-  if(e.target.innerText !== HYPHEN){return}
+  if(e.target.innerText !== HYPHEN){
+    console.log("haltest");    
+    return
+  }
 
   document.querySelectorAll('.pannel').forEach(function( btn ) {
     btn.classList.remove("active")

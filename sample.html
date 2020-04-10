@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>HalJavaScriptTicTacToe</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  </head>
+  <body>
+    <!-- page content -->
+    <div class="container">
+      <div class="content">
+        <h1>my JavaScript</h1>
+        <h2 class="content-title">○× Game</h2>
+        <!-- これいるのか?? -->
+        <input type="hidden" id="finished" value="false">
+        <p>Next: </p>
+        <div class="buttons flex">
+          <a id="circle" class="btn circle active">○</a>
+          <a id="x-mark" class="btn x-mark">×</a>
+        </div>
+        <h2 id="message" class="message hidden"></h2>
+        
+        <table class="table">
+          <tr class="row">
+            <td id="pannel-1-1" class="pannel">-</td>
+            <td id="pannel-2-1" class="pannel">-</td>
+            <td id="pannel-3-1" class="pannel">-</td>
+          </tr>
+          <tr class="row">
+            <td id="pannel-1-2" class="pannel">-</td>
+            <td id="pannel-2-2" class="pannel">-</td>
+            <td id="pannel-3-2" class="pannel">-</td>
+          </tr>
+          <tr class="row">
+            <td id="pannel-1-3" class="pannel">-</td>
+            <td id="pannel-2-3" class="pannel">-</td>
+            <td id="pannel-3-3" class="pannel">-</td>
+          </tr>
+        </table>
+      </div>
+    </div>
+    <script type="text/JavaScript" src="sample.js"></script>
+  </body>
+</html>
